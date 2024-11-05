@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funcionários</title>
+  
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .mensagem-alerta {
+      display: none; 
+      margin-top: 20px;
+    }
+    .hidden {
+      display: none; 
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <img src="./img/images.jpeg" alt="Logo" style="max-width: 100px; height: auto;">
+      </div>
+      <ul class="nav navbar-nav navbar-right" style="margin-top: 25px;">
+        <li><a href="#" onclick="mostrarCadastroFuncionarios()">Cadastrar Funcionário</a></li>
+        <li><a href="#" onclick="mostrarListaFuncionarios()">Lista de Funcionários</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container" style="padding-top: 100px;">
+    <h1 id="titulo">Cadastrar Funcionário</h1> 
+
+    <div id="formularioContainer"> 
+      <div style="padding-top: 20px;">
+        <button class="btn btn-default" onclick="mostrarFormulario('formMedico')">Cadastrar Médico</button>
+        <button class="btn btn-default" onclick="mostrarFormulario('formAtendente')">Cadastrar Atendente</button>
+      </div>
+
+      <!-- Formulário de Médico -->
+      <form id="formMedico" style="padding-top: 20px; display: none;">
+        <div class="form-group">
+          <label for="nome">Nome Completo</label>
+          <input type="text" class="form-control" id="nome" placeholder="Nome">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="crm">CRM</label>
+          <input type="text" class="form-control" id="CRM" placeholder="CRM">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-default" onclick="cadastrarFuncionarioMedico()">Salvar</button>
+        </div>
+      </form>
+
+      <!-- Formulário de Atendente -->
+      <form id="formAtendente" style="padding-top: 20px; display: none;">
+        <div class="form-group">
+          <label for="nomeAtendente">Nome Completo</label>
+          <input type="text" class="form-control" id="nomeAtendente" placeholder="Nome">
+        </div>
+        <div class="form-group">
+          <label for="funcao">Função</label>
+          <input type="text" class="form-control" id="funcao" placeholder="Função">
+        </div>
+        <div class="form-group">
+          <label for="horario">Horário de Turno</label>
+          <input type="text" class="form-control" id="horario" placeholder="Horário de Turno">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-default" onclick="cadastrarFuncionarioAtendente()">Salvar</button>
+        </div>
+      </form>
+
+      <div id="mensagemSucesso" class="alert alert-success mensagem-alerta">
+        Funcionário cadastrado com sucesso!
+      </div>
+
+      <div id="mensagemErro" class="alert alert-danger mensagem-alerta">
+        Por favor, preencha todos os campos obrigatórios!
+      </div>
+    </div>
+
+ 
+    <div id="listaFuncionarios" class="hidden"> 
+      <h2>Lista de Médicos</h2>
+      <table class="table table-striped" id="listaMedicos">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>CRM</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+        
+        </tbody>
+      </table>
+
+      <h2>Lista de Atendentes</h2>
+      <table class="table table-striped" id="listaAtendentes">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Função</th>
+            <th>Horário</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script> <!-- Incluindo o arquivo JavaScript -->
+</body>
+</html>
