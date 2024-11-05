@@ -8,17 +8,34 @@
 </head>
 <body>
     <div class="page-header" style="display: flex; justify-content: center;">
-        <h1>CLÍNICA MÉDICA <small>ADMINISTRAÇÃO</small></h1>
+        <h1>CLÍNICA MÉDICA</h1>
     </div>
-    <br><br><br><br>
-    <h2  style="display: flex; justify-content: center;">Escolha o tipo de entidade que deseja manipular:</h2>
+    <br><br>
+    <h2  style="display: flex; justify-content: center;">Qual setor deseja acessar?</h2>
     <br><br><br><br><br>
-    <div style="display: flex; justify-content: center;">
-        <button>MÉDICOS</button>
-        <button>FUNCIONÁRIOS</button>
-        <button>ESPECIALIDADES</button>
-        <button>PACIENTES</button>
-        <button>CONVÊNIOS</button>
+    <div style="
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column;
+    width: 292px;
+    float: right;">
+        <button class="navUser"><h4><b>MÉDICOS</b></h4></button>
+        <button class="navUser"><h4><b>FUNCIONÁRIOS</b></h4></button>
+        <button class="navUser"><h4><b>ESPECIALIDADES</b></h4></button>
+        <button class="navUser"><h4><b>PACIENTES</b></h4></button>
+        <button class="navUser"><h4><b>CONVÊNIOS</b></h4></button>
     </div>
+    <style>
+        .navUser{
+            margin-top: 25px;
+            margin-bottom: 25px;
+            margin-left: 25px;
+            margin-right: 50px;
+            color: white;
+            background-color: rgb(2, 206, 121);
+            border: 0px;
+            border-radius: 10px;
+        }
+    </style>
 </body>
 </html>
