@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funcionários</title>
+  
+  <!-- Bootstrap -->
+  <link href="../../css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav>
+    <h1>MENU nav AQUI</h1>
+  </nav>
+
+  <div class="container">
+  <div id="mensagemSucesso" class="alert alert-success mensagem-alerta">
+    Funcionário cadastrado com sucesso!
+  </div>
+
+  <div id="mensagemErro" class="alert alert-danger mensagem-alerta">
+    Por favor, preencha todos os campos obrigatórios!
+  </div>
+</div>
+
+      <!-- Formulário de Médico -->
+      <div class="container">
+        <h1>Editar Funcionário</h1>
+
+        <form id="formFuncionario">
+
+          <div class="form-group">
+            <label for="usuario">ID</label>
+            <input type="number" class="form-control" id="id" placeholder="ID do funcionário">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleSelect">Tipo de Funcionário</label>
+            <select class="form-control" id="exampleSelect">
+              <option value="1">Médico</option>
+              <option value="2">Atendente</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="usuario">Usuario</label>
+            <input type="text" class="form-control" id="usuario" placeholder="Digite o usúario">
+          </div>
+
+          <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" class="form-control" id="senha" placeholder="Digite a senha">
+          </div>
+          
+          <div class="row">
+            <div class="col-md-6"> <!-- 6 colunas de largura -->
+              <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite o nome">
+              </div>
+            </div>
+            <div class="col-md-6"> <!-- 6 colunas de largura -->
+              <div class="form-group">
+                <label for="cpf">CPF</label>
+                <input type="text" class="form-control" id="cpf" placeholder="Digite o CPF">
+              </div>
+            </div>
+          </div>
+
+            <div class="form-group">
+              <label for="sexo">Sexo</label>
+              <select class="form-control" id="sexo">
+                <option value="1">Masculino</option>
+                <option value="2">Feminino</option>
+              </select>
+            </div>
+
+            
+            <div class="row">
+              <div class="col-md-6"> <!-- 6 colunas de largura -->
+                <div class="form-group">
+                  <label for="input1">Cidade</label>
+                  <input type="text" class="form-control" id="cidade" placeholder="Digite a cidade">
+                </div>
+              </div>
+              <div class="col-md-6"> <!-- 6 colunas de largura -->
+                <div class="form-group">
+                  <label for="input2">Estado</label>
+                  <input type="text" class="form-control" id="estado" placeholder="Digite o estado">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4"> <!-- 6 colunas de largura -->
+                <div class="form-group">
+                  <label for="input1">Rua</label>
+                  <input type="text" class="form-control" id="rua" placeholder="Digite a rua">
+                </div>
+              </div>
+              <div class="col-md-4"> <!-- 6 colunas de largura -->
+                <div class="form-group">
+                  <label for="input1">Numero</label>
+                  <input type="text" class="form-control" id="numero" placeholder="Digite o número da residencia">
+                </div>
+              </div>
+              <div class="col-md-4"> <!-- 6 colunas de largura -->
+                <div class="form-group">
+                  <label for="input2">Bairro</label>
+                  <input type="text" class="form-control" id="bairro" placeholder="Digite o bairro da residencia">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4"> <!-- 6 colunas de largura -->
+                <div class="form-group">
+                  <label for="input1">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Digite o email">
+                </div>
+              </div>
+              <div class="col-md-4"> <!-- 6 colunas de largura -->
+                <div class="form-group">
+                  <label for="input2">Contato</label>
+                  <input type="text" class="form-control" id="contato" placeholder="Digite alguma forma de contato">
+                </div>
+              </div>
+                <div class="col-md-4"> <!-- 6 colunas de largura -->
+                  <div class="form-group">
+                    <label for="dataNascimento">Data de nascimento</label>
+                    <input type="date" class="form-control" id="date" placeholder="Digite sua data de nascimento">
+                  </div>
+              </div>
+            </div>
+
+        
+            <button class="btn btn-primary" type="submit">Salvar</button>
+            <button class="btn btn-secondary" type="reset">Cancelar</button>
+        
+            
+        </form>
+    </div>
+  
+ 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
