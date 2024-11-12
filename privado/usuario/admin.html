@@ -6,41 +6,40 @@
     <link href="../../css/bootstrap.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body style="padding-top: 50px;">
-     <!-- começo da barrinha de navegação-->
-     <nav class="navbar navbar-inverse navbar-fixed-top">
+<body >
+     <!-- começo da barrinha de navegação--><!--
+      
+      <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid" >
             <div class="navbar-header" >
-                <!--<img src="../../img/images.jpeg" alt="logo">--><!--coloque a imagem da logo aqui-->
+     
+     
+     -->
+    
+                <!--<img src="../../img/images.jpeg" alt="logo">--><!--coloque a imagem da logo aqui--><!--
                 <ul class="nav navbar-nav" style="width: fit-content; float: right;">
-                    <li><a href="#">Médicos <span class="sr-only">(current)</span></a></li>
                     <li><a href="#">Funcionários</a></li>
-                    <li><a href="#">Convênios</a></li>
-                    <li><a href="#">Consultas</a></li>
                     <li><a href="#">Pacientes</a></li>
+                    <li><a href="#"></a></li>
                 </ul><br>
-                <!--<a href="#"><span class="glyphicon glyphicon-menu-hamburger" id="botaodomenu"></span></a>-->
+                <a href="#"><span class="glyphicon glyphicon-menu-hamburger" id="botaodomenu"></span></a>
                 
             </div>
         </div>
-    </nav>
+    </nav>-->
     <!-- Fim da barra de navegação -->
     <div class="page-header" style="display: flex; justify-content: center; margin-top: 0px;">
         <h1>CLÍNICA MÉDICA</h1>
     </div>
     <br><br>
     <h2  style="display: flex; justify-content: center;">Qual setor deseja acessar?</h2>
-    <div style="
-    display: flex; 
-    justify-content: center; 
-    flex-direction: column;
-    width: 292px;
-    float: right;">
-        <button class="navUser"><h4><b>MÉDICOS</b></h4></button>
-        <button class="navUser"><h4><b>FUNCIONÁRIOS</b></h4></button>
-        <button class="navUser"><h4><b>ESPECIALIDADES</b></h4></button>
-        <button class="navUser"><h4><b>PACIENTES</b></h4></button>
-        <button class="navUser"><h4><b>CONVÊNIOS</b></h4></button>
+    <div >
+        <button class="navUser" onclick="window.location.href='../Funcionários/funcionario-cadastrar.html'"><h4><b>CADASTRAR FUNCIONÁRIOS</b></h4></button>
+        <button class="navUser" onclick="window.location.href='../Funcionários/funcionario-editar.html'"><h4><b>EDITAR FUNCIONÁRIOS</b></h4></button>
+        <button class="navUser" onclick="window.location.href='../Funcionários/funcionario-listagem.html'"><h4><b>LISTAR FUNCIONÁRIOS</b></h4></button>
+        <button class="navUser" onclick="window.location.href='../Especialidade/CadEspecialidade.html'"><h4><b>CADASTRAR ESPECIALIDADES</b></h4></button>
+        <button class="navUser" onclick="window.location.href='../Especialidade/EdiEspecialidade.html'"><h4><b>EDITAR ESPECIALIDADES</b></h4></button>
+        <button class="navUser" onclick="window.location.href='../Especialidade/ListEspecialidade.html'"><h4><b>LISTAR ESPECIALIDADES</b></h4></button>
     </div>
     <style>
         .navUser{
@@ -54,6 +53,8 @@
             border-radius: 10px;
             padding: 20px;
         }
+        
+        
     </style>
 </body>
 </html>
