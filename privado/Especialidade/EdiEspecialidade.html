@@ -6,29 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Listar Especializações</title>
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f3f4f6;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: #6c757d;
+            margin-top: 20px;
+            font-size: 1.8rem;
+        }
+        .form-group label {
+            font-weight: 500;
+            color: #495057;
+        }
+        .form-control {
+            border-radius: 8px;
+        }
+        .btn-primary {
+            width: 100%;
+            background-color: rgb(2,206,121);
+            border: none;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: rgb(2,206,121);
+        }
+    </style>
 </head>
 <body>
    
     <div class="container">
-        <h1>Editar especializações</h1>
+        <h1>Editar Especializações</h1>
         <form>
             <div class="form-group">
-
-            <label for="exampleSelect">Selecione o id da Especialização Cadastrada</label>
+                <label for="exampleSelect">Selecione o ID da Especialização Cadastrada</label>
                 <select class="form-control" id="exampleSelect">
                 </select>
             </div>
             <div class="form-group">
-                <label for="exampleInputEspecialidade1">Escreva o novo nome da especialidade</label>
-                <input type="text" class="form-control" id="nvesp1" placeholder="novo nome da especialidade:">
+                <label for="exampleInputEspecialidade1">Novo Nome da Especialidade</label>
+                <input type="text" class="form-control" id="nvesp1" placeholder="Digite o novo nome">
             </div>
-            <button type="submit" class="btn btn-primary">salvar</button>
+            <button type="submit" class="btn btn-primary">Salvar</button>
         </form>
     </div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="../../js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -6,11 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Listar Especializações</title>
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: Arial, sans-serif;
+        }
+        h4 {
+            color: #343a40;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .table thead {
+            background-color: rgb(2,206,121);
+            color: #ffffff;
+        }
+        .table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .table th, .table td {
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-    <h1>Listar Especializações</h1>
 
+<div class="container">
     <h4>Especializações Cadastradas</h4>
     <table class="table table-striped">
         <thead>
@@ -21,15 +42,22 @@
         </thead>
         <tbody>
             <tr>
+                <td>1</td>
+                <td>Cardiologia</td>
             </tr>
             <tr>
+                <td>2</td>
+                <td>Dermatologia</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Neurologia</td>
+            </tr>
         </tbody>
     </table>
 </div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="../../js/bootstrap.min.js"></script>
 </body>
 </html>
